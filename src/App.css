@@ -1,0 +1,83 @@
+body{
+    font-family: 'Cursive', sans-serif;
+
+}
+.search-section {
+    background-image: url('../src/image/library-img.jpg'); 
+    width: 100%;
+    height: 590px; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    overflow: hidden; 
+    position: relative; 
+}
+
+.search-overlay {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
+}
+
+.search-form {
+    position: relative;
+    z-index: 2; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 100%; 
+}
+
+.search-form input {
+    width: 600px; 
+    max-width: 100%; 
+    padding: 10px; 
+}
+
+.search-form button {
+    padding: 10px 20px; 
+}
+.booklist {
+    padding: 20px;
+    background-color: #f8f9fa; /* Light background color */
+}
+
+.booklist-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.book {
+    background-color: white; /* White background for book cards */
+    border: 1px solid #dee2e6; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding inside the card */
+    text-align: center; /* Center text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: transform 0.2s; /* Animation for hover effect */
+}
+
+.book:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.book-cover {
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.book-title {
+    font-size: 1.2rem; /* Title size */
+    margin: 10px 0; /* Spacing */
+}
+
+.book-author, .book-edition {
+    font-size: 0.9rem; /* Smaller text for author and edition */
+    color: #6c757d; /* Grey color */
+}
